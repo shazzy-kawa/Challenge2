@@ -1,5 +1,7 @@
+/*creates sizing and background colour for the whole deployed page*/
 * {
     box-sizing: border-box;
+    background-color: lightpink;
   }
   
   body {
@@ -17,38 +19,38 @@
   h6 {
     margin: 0;
   }
-  
+  /*sets margin and font for all p tag texts in the html file*/
   p {
     margin: 50px;
     font-size: medium;
     font-weight: 300;
   }
-  
+  /* everything in the header is set to flex display. All content within the header is spaced*/
   header {
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
     margin-right: 20px;
   }
-  
+  /* all elements in the navigation bar has font size set and is floated towards the rigth of the page*/
   header nav {
    
     float: right;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
   }
-
+/*elements within the header have the bullet points removed*/
   header nav ul {
     list-style-type: none;
   }
-
+/* list of elements within the header to be displayed on one line*/
   header nav ul li {
     display: inline-block;
     margin-left: 25px;
   }
 
 
-
+/*all image dimensions defined here using their classes. The profile photo is set bigger than all the rest*/
 .avatar {
     max-height: 500px;
     max-width: 300px;   
@@ -71,12 +73,12 @@
     max-height: 200px;
 }
 
-
+/*designs all section headings*/
 .page-section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* grid template used to design the page. One column and three rows for the about-me section, work and portfolio section*/
 .page-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -85,6 +87,7 @@
     "work"
     "portfolio";
 }
+/*grid areas for the above grid defined*/
 #about {
     grid-area: about;
 }
@@ -96,7 +99,7 @@
 #portfolio {
     grid-area: portfolio ;
 }
-
+/* a second grid is nested within the first in the portfolio section to organise all deployed projects*/
 #portfolio {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -117,9 +120,7 @@
     grid-area: project3;
 }
 
-p {
-    
-}
+/*contact details placed in footer*/
 
 footer {
   display: flex;
