@@ -19,7 +19,9 @@
   }
   
   p {
-    margin: 0;
+    margin: 50px;
+    font-size: medium;
+    font-weight: 300;
   }
   
   header {
@@ -48,8 +50,8 @@
 
 
 .avatar {
-    max-height: 200px;
-    max-width: 200px;   
+    max-height: 500px;
+    max-width: 300px;   
 }
 .workphoto{
     max-height: 200px;
