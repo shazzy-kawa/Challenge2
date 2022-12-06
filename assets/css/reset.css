@@ -115,7 +115,29 @@
     grid-area: project3;
 }
 
+p {
+    
+}
 
-.page-section h2 {
-    margin-bottom: 20px;
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+footer nav {
+ 
+  float: right;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 20px;
+}
+
+footer nav ul {
+  list-style-type: none;
+}
+
+footer nav ul li {
+  display: inline-block;
+  margin-left: 25px;
 }
